@@ -2,7 +2,34 @@ package main;
 
 public class Main {
     public static void main(String[] args) {
-        String[] employees = {
+        MyArrayList employees = new MyArrayList();
+        employees.add("Nick");
+        employees.add("Nex");
+        employees.add("Kick");
+        employees.add("Brick");
+        employees.add("Chuck");
+        employees.add("Gek");
+        employees.add("Vasya");
+
+        employees.remove("Kick");
+
+        for (int i = 0; i <employees.getSize(); i++) {
+            System.out.println(employees.get(i));
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*String[] employees = {
                 "Nikita",
                 "Igor",
                 "Olga",
@@ -26,6 +53,6 @@ public class Main {
         employees = newNames;
         for (String name: employees) {
             System.out.println(name);
-        }
+        }*/
     }
 }
